@@ -1,12 +1,10 @@
-# Your Name Here
+# Hayden Bybee
 # UWYO COSC 1010
-# Submission Date
+# 09/30/24
 # Lab 03 
-# Lab Section: 
+# Lab Section: 16
 # Sources, people worked with, help given to: 
-# your
-# comments
-# here
+# got the += from TA demonstration
 
 
 
@@ -99,7 +97,27 @@ min_temps = [
 # You cannot use any pre-existing functions (like mean()) and must perform the calculations manually.
 # Output the results of both calculations.
 
+mxsm = 0 
+mxln = 0
+for maxt in max_temps:
+    mxln += 1
+    mxsm += maxt
+
+print(mxsm / mxln)
+
+mnsm = 0
+mnln = 0
+for mint in min_temps:
+    mnln += 1
+    mnsm += mint
+
+print(mnsm / mnln)
+
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
 
+max_temps.sort()
+print(max_temps[-1])
 
+min_temps.sort()
+print(min_temps[0])
